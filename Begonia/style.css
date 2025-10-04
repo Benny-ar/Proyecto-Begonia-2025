@@ -1,0 +1,205 @@
+html {
+  background-color: #e6beae;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------- HEADER ---------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  flex-wrap: wrap;
+}
+
+.header-izquierdo {
+  display: flex;
+  gap: 30px;
+  font-size: 1.5rem;
+  color: #694736;
+  flex-wrap: wrap;
+}
+
+.header-izquierdo a {
+  text-decoration: none;
+  color: #694736;
+}
+
+.logo-header-centro img {
+  height: auto;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.header-derecho {
+  display: flex;
+  gap: 30px;
+  color: #694736;
+  flex-wrap: wrap;
+}
+
+.header-derecho input {
+  border: none;
+  outline: none;
+  background-color: #694736;
+  border-radius: 50px;
+  width: 200px;
+  max-width: 80%;
+  font-size: 100%;
+  padding: 8px 12px;
+  color: white;
+}
+
+.header-derecho input::placeholder {
+  color: white;
+  font-style: italic;
+  opacity: 1;
+}
+
+.header-derecho img {
+  height: auto;
+  width: 70px;
+  display: block;
+}
+
+/* ---------------- BODY ---------------- */
+.imagen-menu img {
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+}
+
+.categorias h1 {
+  display: flex;
+  justify-content: center;
+  border-top: #694736 solid 5px;
+  border-bottom: #694736 solid 5px;
+  font-size: 70px;
+  color: #694736;
+  padding: 25px 0;
+  text-align: center;
+}
+
+/* ---- Categorías con tamaño uniforme ---- */
+.categorias img {
+  width: 100%;
+  max-width: 500px;     /* límite en pantallas grandes */
+  aspect-ratio: 2 / 3;  /* todas mantienen proporción 2:3 */
+  object-fit: cover;    /* recorta para que queden iguales */
+  border-radius: 8px;
+}
+
+/* Filas de categorías */
+.primera-fila,
+.segunda-fila {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+.primera-fila img,
+.segunda-fila img {
+  transition: filter 0.3s ease;
+}
+
+.primera-fila img:hover,
+.segunda-fila img:hover {
+  filter: brightness(60%);
+  cursor: pointer;
+}
+
+.contenedores-primera-fila,
+.contenedores-segunda-fila {
+  position: relative;
+  display: inline-block;
+}
+
+.contenedores-primera-fila p,
+.contenedores-segunda-fila p {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-top: #694736 solid 5px;
+  border-bottom: #694736 solid 5px;
+  font-size: 200%;
+  padding: 10px 20px;
+  margin: 0;
+  text-align: center;
+  width: 93%;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #694736;
+  color: white;
+  margin-top: 30px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* ===== Tablets ===== */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .categorias h1 {
+    font-size: 50px;
+  }
+}
+
+/* ===== Celulares ===== */
+@media (max-width: 768px) {
+  .body h1 {
+    font-size: 3em;
+  }
+
+  .header-izquierdo, .header-derecho {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .categorias h1 {
+    font-size: 35px;
+    padding: 15px 0;
+  }
+
+  .contenedores-primera-fila p,
+  .contenedores-segunda-fila p {
+    font-size: 120%;
+    width: 90%;
+    bottom: 40%;
+  }
+}
+
+/* ===== Celulares chicos ===== */
+@media (max-width: 480px) {
+  
+  .header-derecho input {
+    width: 100%;
+  }
+
+  .categorias h1 {
+    font-size: 28px;
+  }
+
+  .contenedores-primera-fila p,
+  .contenedores-segunda-fila p {
+    font-size: 100%;
+    padding: 5px 10px;
+  }
+}

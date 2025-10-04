@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begonia - Zapatillas</title>
+    <link rel="stylesheet" href="zapatillas-style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-izquierdo">
+            <a href="../codigo-pagina-remeras/remeras.html">
+                <span>Tienda</span>
+            </a>
+           
+            <a href="../paginas-nosotros-contacto/nosotros.html">
+                <span>Nosotros</span> <!--"Nosotros" de header y "Quienes somos" de footer deben ser el mismo html-->
+            </a>
+
+
+            <a href="../paginas-nosotros-contacto/contacto.html">
+                <span>Contacto</span>
+            </a>
+        </div>
+        <div class="logo-header-centro">
+            <a href="../index.html">
+                <img src="../imagenes-pagina/LogoBegonia.png" alt="Logo_Begonia">
+            </a>
+        </div>
+        <div class="header-derecho">
+            <!--<p>¿Qué estas buscando?</p>-->
+            <input type="text" placeholder="Buscar producto...">
+            <img src="../imagenes-pagina/carrito-de-compra.png" alt="Carrito_de_compra">
+        </div>
+    </div>
+
+
+    <div class="body">
+        <h1>Zapatillas</h1>
+        <div class="new-container">
+           <ul class="navigation">
+                <li> <a href="../index.html">INICIO</a></li>
+                <li> <a href="../codigo-pagina-remeras/remeras.html">REMERAS</a></li>  
+                <li> <a href="../codigo-pagina-pantalones/pantalones.html">PANTALONES</a></li>
+                <li> <a href="../codigo-pagina-abrigos/abrigos.html">ABRIGOS</a></li>
+                <li class="active"> <a href="zapatillas.html">ZAPATILLAS</a></li>
+                <!-- Barra de resaltado -->
+                <div class="high"></div>
+            </ul>
+        </div>
+           
+        <div class="seccion-ropa">
+            <h2>MUJERES</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Zapatillas_M/borcegos-sin-M.jpg" alt="reme mujer 1">
+                    <div class="info-producto">
+                        <h3>Borcegos de cuero negros</h3>
+                        <p class="descripcion">Resistentes y cómodos, ideales para un look urbano en días frescos.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Zapatillas_M/zapatillas-converse-M.jpg" alt="reme mujer 2">
+                    <div class="info-producto">
+                        <h3>Zapatillas Converse grises</h3>
+                        <p class="descripcion">El clásico atemporal que combina con cualquier estilo.</p>
+                        <p class="precio">$20.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Zapatillas_M/zapatillas-deportivas-hush-puppies-M.jpg" alt="reme mujer 3">
+                    <div class="info-producto">
+                        <h3>Zapatillas deportivas Hush Puppies</h3>
+                        <p class="descripcion">Ligeras y cómodas, perfectas para entrenar o caminar largas horas.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Zapatillas_M/zapatillas-mishka-M.jpg" alt="reme mujer 4">
+                    <div class="info-producto">
+                        <h3>Zapatillas Mishka blancas</h3>
+                        <p class="descripcion">Diseño moderno con detalles únicos para un look casual y chic.</p>
+                        <p class="precio">$27.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Zapatillas_M/zapatillas-rapsodia-M.jpg" alt="abrigo mujer 5">
+                    <div class="info-producto">
+                        <h3>Zapatillas Rapsodia negras con detalles</h3>
+                        <p class="descripcion">Un estilo distinto con acabados que marcan tendencia.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Zapatillas_M/zapatillas-why-donna-M.jpg" alt="remr mujer 6">
+                    <div class="info-producto">
+                        <h3>Zapatillas Why Donna negras</h3>
+                        <p class="descripcion">Versátiles y elegantes, ideales para el día y la noche.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="seccion-ropa">
+            <h2>HOMBRES</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Zapatillas_H/zapatilla-reebok-H.jpg" alt="reme hombre 1">
+                    <div class="info-producto">
+                        <h3>Zapatillas Reebok negras</h3>
+                        <p class="descripcion">Clásico diseño deportivo que ofrece comodidad y durabilidad.</p>
+                        <p class="precio">$37.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Zapatillas_H/zapatillas-adidas-H.jpg" alt="reme hombre 2">
+                    <div class="info-producto">
+                        <h3>Zapatillas Adidas blancas</h3>
+                        <p class="descripcion">Minimalistas y versátiles, perfectas para uso diario o entrenamiento.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Zapatillas_H/zapatillas-kappa-H.jpg" alt="abrigo hombre 3">
+                    <div class="info-producto">
+                        <h3>Zapatillas Kappa negras</h3>
+                        <p class="descripcion">Confort urbano con un diseño moderno y funcional.</p>
+                        <p class="precio">$35.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Zapatillas_H/zapatillas-marca-internacional-H.jpg" alt="reme hombre 4">
+                    <div class="info-producto">
+                        <h3>Zapatillas deportivas importadas</h3>
+                        <p class="descripcion">Alto rendimiento con un estilo internacional que destaca.</p>
+                        <p class="precio">$40.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Zapatillas_H/zapatillas-puma-H.jpg" alt="reme hombre 5">
+                    <div class="info-producto">
+                        <h3>Zapatillas Puma grises</h3>
+                        <p class="descripcion">Inspiradas en la calle, cómodas y fáciles de combinar.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Zapatillas_H/zapatillas-vans-H.jpg" alt="abrigo hombre 6">
+                    <div class="info-producto">
+                        <h3>Zapatillas Vans negras</h3>
+                        <p class="descripcion">El clásico skater con diseño duradero y siempre en tendencia.</p>
+                        <p class="precio">$40.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; 2025 Begonia. Todos los derechos reservados.</p>
+    </div>
+   
+    <script src="zapatillas-JVS.js"> </script>
+</body>
+</html>

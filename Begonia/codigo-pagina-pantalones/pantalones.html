@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begonia - Pantalones</title>
+    <link rel="stylesheet" href="pantalones-style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-izquierdo">
+            <a href="../codigo-pagina-remeras/remeras.html">
+                <span>Tienda</span>
+            </a>
+           
+            <a href="../paginas-nosotros-contacto/nosotros.html">
+                <span>Nosotros</span> <!--"Nosotros" de header y "Quienes somos" de footer deben ser el mismo html-->
+            </a>
+
+
+            <a href="../paginas-nosotros-contacto/contacto.html">
+                <span>Contacto</span>
+            </a>
+        </div>
+        <div class="logo-header-centro">
+            <a href="../index.html">
+                <img src="../imagenes-pagina/LogoBegonia.png" alt="Logo_Begonia">
+            </a>
+        </div>
+        <div class="header-derecho">
+            <input type="text" placeholder="Buscar producto...">
+            <img src="../imagenes-pagina/carrito-de-compra.png" alt="Carrito_de_compra">
+        </div>
+    </div>
+
+
+    <div class="body">
+        <h1>Pantalones</h1>
+        <div class="new-container">
+            <ul class="navigation">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../codigo-pagina-remeras/remeras.html">REMERAS</a></li>
+                <li class="active"><a href="../codigo-pagina-pantalones/pantalones.html">PANTALONES</a></li>
+                <li><a href="../codigo-pagina-abrigos/abrigos.html">ABRIGOS</a></li>
+                <li><a href="../codigo-pagina-zapatillas/zapatillas.html">ZAPATILLAS</a></li>
+                <!-- Barra de resaltado -->
+                <div class="high"></div>
+            </ul>
+        </div>
+
+        <div class="seccion-ropa">
+            <h2>MUJERES</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Pantalones_M/jean-crop-M.jpg" alt="jean crop mujer">
+                    <div class="info-producto">
+                        <h3>Jean crop azul</h3>
+                        <p class="descripcion">De tiro alto y corte recto, ideal para un look casual y moderno.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Pantalones_M/jean-gusman-M.jpg" alt="jean gusman mujer">
+                    <div class="info-producto">
+                        <h3>Jean Gusman clásico</h3>
+                        <p class="descripcion">Diseño atemporal, resistente y fácil de combinar en tu día a día.</p>
+                        <p class="precio">$20.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Pantalones_M/jean-kosiuko-M.jpg" alt="jean kosiuko mujer">
+                    <div class="info-producto">
+                        <h3>Jean Kosiuko skinny</h3>
+                        <p class="descripcion">Entallado y versátil, perfecto para un look urbano con estilo.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Pantalones_M/jean-portsaid-M.jpg" alt="jean portsaid mujer">
+                    <div class="info-producto">
+                        <h3>Jean Portsaid recto</h3>
+                        <p class="descripcion">Elegante y cómodo, ideal para un look casual-formal.</p>
+                        <p class="precio">$27.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Pantalones_M/jogging-babaton-M.jpg" alt="jogging babaton mujer">
+                    <div class="info-producto">
+                        <h3>Jogging Babaton gris</h3>
+                        <p class="descripcion">Comodidad asegurada para estar en casa o salir con estilo deportivo.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Pantalones_M/jogging-deportivo-adidas-M.jpg" alt="jogging adidas mujer">
+                    <div class="info-producto">
+                        <h3>Jogging Adidas deportivo</h3>
+                        <p class="descripcion">Clásico y funcional, perfecto para entrenar o usar en la rutina diaria.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-ropa">
+            <h2>HOMBRES</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Pantalones_H/jean-equus-H.jpg" alt="jean equus hombre">
+                    <div class="info-producto">
+                        <h3>Jean Equus azul oscuro</h3>
+                        <p class="descripcion">Con un calce clásico y elegante, adaptable a cualquier ocasión.</p>
+                        <p class="precio">$37.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Pantalones_H/jean-kenneth-cole-H.jpg" alt="jean kenneth cole hombre">
+                    <div class="info-producto">
+                        <h3>Jean Kenneth Cole recto</h3>
+                        <p class="descripcion">Un jean moderno y resistente, ideal para la vida urbana.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Pantalones_H/jean-mango-H.jpg" alt="jean mango hombre">
+                    <div class="info-producto">
+                        <h3>Jean Mango slim fit</h3>
+                        <p class="descripcion">Ajustado y cómodo, para un estilo actual y sofisticado.</p>
+                        <p class="precio">$35.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Pantalones_H/jean-zara-H.jpg" alt="jean zara hombre">
+                    <div class="info-producto">
+                        <h3>Jean Zara básico</h3>
+                        <p class="descripcion">Prenda versátil con un diseño clásico que nunca pasa de moda.</p>
+                        <p class="precio">$40.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Pantalones_H/pantalon-lazzy-H.jpg" alt="pantalon lazzy hombre">
+                    <div class="info-producto">
+                        <h3>Pantalón Lazzy jogger</h3>
+                        <p class="descripcion">Casual y cómodo, con un estilo relajado y urbano.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Pantalones_H/pantalon-sin-H.jpg" alt="pantalon vestir hombre">
+                    <div class="info-producto">
+                        <h3>Pantalón de vestir negro</h3>
+                        <p class="descripcion">Elegante y formal, ideal para ocasiones especiales o trabajo.</p>
+                        <p class="precio">$40.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p>&copy; 2025 Begonia. Todos los derechos reservados.</p>
+    </div>
+   
+    <script src="pantalones-JVS.js"> </script>
+</body>
+</html>

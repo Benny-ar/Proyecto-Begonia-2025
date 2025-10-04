@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto-style.css">
+    <title>Begonia - Contacto</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-izquierdo">
+            <a href="../codigo-pagina-remeras/remeras.html">
+                <span>Tienda</span> 
+            </a>
+            
+            <a href="nosotros.html">
+                <span>Nosotros</span> <!--"Nosotros" de header y "Quienes somos" de footer deben ser el mismo html-->
+            </a>
+
+            <a href="contacto.html">
+                <span>Contacto</span>
+            </a>
+        </div>
+        <div class="logo-header-centro">
+            <a href="../index.html">
+                <img src="../imagenes-pagina/LogoBegonia.png" alt="Logo_Begonia">
+            </a>
+        </div>
+        <div class="header-derecho">
+            <!--<p>¿Qué estas buscando?</p>-->
+            <input type="text" placeholder="Buscar producto...">
+            <img src="../imagenes-pagina/carrito-de-compra.png" alt="Carrito_de_compra">
+        </div>
+    </div>
+
+    <div class="body">
+        <h1>Contacto</h1>
+        <div class="info-contacto">
+            <p>Whattsapp: +1164831738</p>
+            <p>Correo electronico: Begon1@gmail.com</p>
+            <p>Instagram: @begonia.clothess</p>
+        </div>
+        <h2>Envíanos un mensaje</h2>
+        <div class="formulario">
+            <p>*Correo electrónico:</p>
+            <input type="email" size="80" placeholder="Ingrese correo electrónico..." name="" id="gmail"><br>
+            <p>*Nombre y apellido:</p>
+            <input type="text" placeholder="Ingrese nombre y apellido..." name="" id="nombre"><br>
+            <p>*Mensaje:</p>
+            <input type="text" placeholder="Ingrese mensaje..." name="" id="mensaje">
+            <br><br>
+            <input type="submit" onclick="send()" value="Enviar" id="send">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Begonia. Todos los derechos reservados.</p>
+    </div>
+    <script src="contacto-JVS.js"></script>
+</body>
+</html>

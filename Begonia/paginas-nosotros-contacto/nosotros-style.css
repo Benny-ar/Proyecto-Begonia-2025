@@ -1,0 +1,165 @@
+html {
+  background-color: #e6beae;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  flex-wrap: wrap;
+}
+
+
+.header-izquierdo {
+  display: flex;
+  gap: 30px;
+  font-size: 1.5rem;
+  color: #694736;
+}
+
+
+.header-izquierdo a {
+  text-decoration: none;
+  color: #694736;
+}
+
+
+.logo-header-centro img {
+  height: auto;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.header-derecho {
+  display: flex;
+  gap: 30px;
+  color: #694736;
+  flex-wrap: wrap;
+}
+
+
+.header-derecho input {
+  border: none;
+  outline: none;
+  background-color: #694736;
+  border-radius: 50px;
+  width: 200px;
+  max-width: 80%;
+  font-size: 100%;
+  padding: 8px 12px;
+  color: white;
+}
+
+
+.header-derecho input::placeholder {
+  color: white;
+  font-style: italic;
+  opacity: 1;
+}
+.header-derecho img {
+  height: auto;
+  width: 70px;
+  display: block;
+}
+/* FIN HEADER */
+
+.body h1 {
+  text-align: center;
+  font-size: 4em;
+  background-color: #694736;
+  color: white;
+  padding: 1%;
+  border-radius: 50px;
+  display: block;
+  margin: 1.5% auto;
+  width: fit-content;
+  max-width: 90%;
+}
+
+
+.body p{
+  padding: 2.5%;
+  text-align: center;
+  font-size: 2em;
+  color: #694736;
+}
+
+.body h2{
+  font-size: 2em;
+  margin-bottom: 25px;
+  background-color: #694736;
+  color: white;
+  padding: 1%;
+  width: 100%;
+  text-align: center;
+}
+
+.google-maps {
+  position: relative;
+  width: 80%;         /* ancho por defecto para pantallas grandes */
+  max-width: 1000px;  /* no se hará más grande que esto */
+  padding-bottom: 56.25%; /* relación 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;     /* centra horizontalmente */
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #694736;
+  color: white;
+  margin-top: 30px;
+}
+
+/* ===== Tablets ===== */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+/* ===== Celulares ===== */
+@media (max-width: 768px) {
+  .body h1 {
+    font-size: 3em;
+  }
+
+  .header-izquierdo, .header-derecho {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ===== Celulares chicos ===== */
+@media (max-width: 480px) {
+  .body h1 {
+    font-size: 2em;
+  }
+
+  .header-derecho input {
+    width: 100%;
+  }
+}
