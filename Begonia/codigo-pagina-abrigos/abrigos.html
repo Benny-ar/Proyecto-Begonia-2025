@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begonia - Abrigos</title>
+    <link rel="stylesheet" href="abrigos-style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-izquierdo">
+            <a href="../codigo-pagina-remeras/remeras.html">
+                <span>Tienda</span>
+            </a>
+           
+            <a href="../paginas-nosotros-contacto/nosotros.html">
+                <span>Nosotros</span> <!--"Nosotros" de header y "Quienes somos" de footer deben ser el mismo html-->
+            </a>
+
+
+            <a href="../paginas-nosotros-contacto/contacto.html">
+                <span>Contacto</span>
+            </a>
+        </div>
+        <div class="logo-header-centro">
+            <a href="../index.html">
+                <img src="../imagenes-pagina/LogoBegonia.png" alt="Logo_Begonia">
+            </a>
+        </div>
+        <div class="header-derecho">
+            <!--<p>¿Qué estas buscando?</p>-->
+            <input type="text" placeholder="Buscar producto...">
+            <img src="../imagenes-pagina/carrito-de-compra.png" alt="Carrito_de_compra">
+        </div>
+    </div>
+
+
+    <div class="body">
+        <h1>Abrigos</h1>
+        <div class="new-container">
+        <ul class="navigation">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../codigo-pagina-remeras/remeras.html">REMERAS</a></li>  
+                <li><a href="../codigo-pagina-pantalones/pantalones.html">PANTALONES</a></li>
+                <li class="active"><a href="../codigo-pagina-abrigos/abrigos.html">ABRIGOS</a></li>
+                <li><a href="../codigo-pagina-zapatillas/zapatillas.html">ZAPATILLAS</a></li>
+                <div class="high"></div>
+            </ul>
+        </div>
+        
+        <div class="seccion-ropa">
+            <h2>MUJERES</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Abrigos_M/campera-de-tela-portsaid-M.jpg" alt="Campera Portsaid Mujer">
+                    <div class="info-producto">
+                        <h3>Campera Portsaid de tela</h3>
+                        <p class="descripcion">Ligera y cómoda, ideal para entretiempo.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Abrigos_M/campera-invierno-kosiuko-M.jpg" alt="Campera Kosiuko Mujer">
+                    <div class="info-producto">
+                        <h3>Campera Kosiuko de invierno</h3>
+                        <p class="descripcion">Abrigo grueso para los días más fríos.</p>
+                        <p class="precio">$20.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Abrigos_M/campera-invierno-pieta-M.jpg" alt="Campera Pieta Mujer">
+                    <div class="info-producto">
+                        <h3>Campera Pieta</h3>
+                        <p class="descripcion">Con estilo moderno y muy abrigada.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Abrigos_M/campera-invierno-wanama-M.jpg" alt="Campera Wanama Mujer">
+                    <div class="info-producto">
+                        <h3>Campera Wanama</h3>
+                        <p class="descripcion">Clásica y versátil, combina con todo.</p>
+                        <p class="precio">$27.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Abrigos_M/campera-invierno-zara-M.jpg" alt="Campera Zara Mujer">
+                    <div class="info-producto">
+                        <h3>Campera Zara</h3>
+                        <p class="descripcion">Abrigo moderno con detalles únicos.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Abrigos_M/tapado-invierno-ayres-M.jpg" alt="Tapado Ayres Mujer">
+                    <div class="info-producto">
+                        <h3>Tapado Ayres de invierno</h3>
+                        <p class="descripcion">Elegante y cálido, perfecto para un look formal.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-ropa">
+            <h2>HOMBRES</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Abrigos_H/abrigo-trench-perramus-H.jpg" alt="Trench Perramus Hombre">
+                    <div class="info-producto">
+                        <h3>Trench Perramus</h3>
+                        <p class="descripcion">Clásico abrigo impermeable para la lluvia y el frío.</p>
+                        <p class="precio">$37.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Abrigos_H/campera-deportiva-nike-H.jpg" alt="Campera Nike Hombre">
+                    <div class="info-producto">
+                        <h3>Campera deportiva Nike</h3>
+                        <p class="descripcion">Deportiva y cómoda, perfecta para entrenar o usar a diario.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Abrigos_H/campera-deportiva-under-armour-H.jpg" alt="Campera Under Armour Hombre">
+                    <div class="info-producto">
+                        <h3>Campera Under Armour</h3>
+                        <p class="descripcion">Abrigo deportivo resistente y versátil.</p>
+                        <p class="precio">$35.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Abrigos_H/campera-invierno-rochas-H.jpg" alt="Campera Rochas Hombre">
+                    <div class="info-producto">
+                        <h3>Campera Rochas de invierno</h3>
+                        <p class="descripcion">Abrigo elegante para los días fríos.</p>
+                        <p class="precio">$40.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Abrigos_H/campera-scotch&soda-H.jpg" alt="Campera Scotch & Soda Hombre">
+                    <div class="info-producto">
+                        <h3>Campera Scotch & Soda</h3>
+                        <p class="descripcion">Estilo urbano con diseño de alta calidad.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Abrigos_H/tapado-invierno-perramus-H.jpg" alt="Tapado Perramus Hombre">
+                    <div class="info-producto">
+                        <h3>Tapado Perramus</h3>
+                        <p class="descripcion">Abrigo largo, elegante y muy abrigado para el invierno.</p>
+                        <p class="precio">$40.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p>&copy; 2025 Begonia. Todos los derechos reservados.</p>
+    </div>
+   
+    <script src="abrigos-JVS.js"> </script>
+</body>
+</html>

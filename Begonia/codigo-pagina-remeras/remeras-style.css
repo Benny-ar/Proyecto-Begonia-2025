@@ -1,0 +1,281 @@
+html {
+  background-color: #e6beae;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  flex-wrap: wrap;
+}
+
+.header-izquierdo {
+  display: flex;
+  gap: 30px;
+  font-size: 1.5rem;
+  color: #694736;
+  flex-wrap: wrap;
+}
+
+.header-izquierdo a {
+  text-decoration: none;
+  color: #694736;
+}
+
+.logo-header-centro img {
+  height: auto;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.header-derecho {
+  display: flex;
+  gap: 30px;
+  color: #694736;
+  flex-wrap: wrap;
+}
+
+.header-derecho input {
+  border: none;
+  outline: none;
+  background-color: #694736;
+  border-radius: 50px;
+  width: 200px;
+  max-width: 100%;
+  font-size: 100%;
+  padding: 8px 12px;
+  color: white;
+}
+
+.header-derecho input::placeholder {
+  color: white;
+  font-style: italic;
+  opacity: 1;
+}
+
+.header-derecho img {
+  height: auto;
+  width: 70px;
+  display: block;
+}
+
+.body h1 {
+  text-align: center;
+  font-size: 4em;
+  background-color: #694736;
+  color: white;
+  padding: 1%;
+  border-radius: 50px;
+  display: block;
+  margin: 1.5% auto;
+  width: fit-content;
+  max-width: 90%;
+}
+
+/* MENU DE NAVEGACIÓN */
+.new-container {
+  display: flex;
+  justify-content: center;
+  margin: 3% auto;
+  padding: 5px;
+  border-radius: 30px;
+  background: #f0cdcf;
+  box-shadow: 0 0px 15px rgb(54, 53, 53);
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;           
+  justify-content: center;   
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation li a {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #0f0f0f;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.navigation li.active a {
+  color: #694736;
+  font-weight: bold;
+}
+
+.high {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: #d46779;
+  border-radius: 30px;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+/* Sección de productos */
+.seccion-ropa h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  background-color: #694736;
+  color: white;
+  padding: 1%;
+  width: 100%;
+  text-align: center;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1% 5%;
+}
+
+.producto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  object-fit: cover;
+}
+
+.info-producto {
+  padding: 15px;
+  text-align: center;
+}
+
+.info-producto h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.info-producto .descripcion {
+  font-size: 0.9em;
+  color: #666;
+  margin: 5px 0 10px;
+}
+
+.info-producto .precio {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.boton-carrito {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-carrito:hover {
+  background-color: #555;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #694736;
+  color: white;
+  margin-top: 30px;
+}
+
+/*CODIGO RESPONSIVE*/
+/* ===== Tablets ===== */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navigation {
+    gap: 12px;
+  }
+}
+
+/* ===== Celulares ===== */
+@media (max-width: 768px) {
+  .body h1 {
+    font-size: 3em;
+  }
+
+  .header-izquierdo, .header-derecho {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navigation {
+    gap: 10px;
+  }
+}
+
+/* ===== Celulares pequeños ===== */
+@media (max-width: 480px) {
+  .body h1 {
+    font-size: 2em;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .navigation li a {
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
+    font-size: 1em;
+    padding: 8px 10px;
+  }
+
+  .header-derecho input {
+    width: 100%;
+  }
+}

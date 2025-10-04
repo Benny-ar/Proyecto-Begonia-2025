@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begonia - Remeras</title>
+    <link rel="stylesheet" href="remeras-style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-izquierdo">
+            <a class="botones-header" href="remeras.html">
+                <span>Tienda</span>
+            </a>
+           
+            <a class="botones-header"  href="../paginas-nosotros-contacto/nosotros.html">
+                <span>Nosotros</span> <!--"Nosotros" de header y "Quienes somos" de footer deben ser el mismo html-->
+            </a>
+
+
+            <a class="botones-header" href="../paginas-nosotros-contacto/contacto.html">
+                <span>Contacto</span>
+            </a>
+        </div>
+        <div class="logo-header-centro">
+            <a href="../index.html">
+                <img src="../imagenes-pagina/LogoBegonia.png" alt="Logo_Begonia">
+            </a>
+        </div>
+        <div class="header-derecho">
+            <!--<p>¿Qué estas buscando?</p>-->
+            <input type="text" placeholder="Buscar producto...">
+            <img src="../imagenes-pagina/carrito-de-compra.png" alt="Carrito_de_compra">
+        </div>
+    </div>
+
+
+    <div class="body">
+        <h1>Remeras</h1>
+        <div class="new-container">
+           <ul class="navigation">
+                <li> <a href="../index.html">INICIO</a></li>
+                <li class="active"> <a href="../codigo-pagina-remeras/remeras.html">REMERAS</a></li>  
+                <li> <a href="../codigo-pagina-pantalones/pantalones.html">PANTALONES</a></li>
+                <li> <a href="../codigo-pagina-abrigos/abrigos.html">ABRIGOS</a></li>
+                <li> <a href="../codigo-pagina-zapatillas/zapatillas.html">ZAPATILLAS</a></li>
+                <!-- Barra de resaltado -->
+                <div class="high"></div>
+            </ul>
+        </div>
+           
+        <div class="seccion-ropa">
+            <h2>MUJERES</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Remeras_M/remera-carhartt-M.jpg" alt="reme mujer 1">
+                    <div class="info-producto">
+                        <h3>Remera carhartt negra</h3>
+                        <p class="descripcion">Clásica, comoda para tu dia a dia.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Remeras_M/remera-deportiva-under-armour-M.jpg" alt="reme mujer 2">
+                    <div class="info-producto">
+                        <h3>Deportiva gris</h3>
+                        <p class="descripcion">Tu basica gris basica para entrenar.</p>
+                        <p class="precio">$20.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Remeras_M/remera-furzai_M.jpg" alt="reme mujer 3">
+                    <div class="info-producto">
+                        <h3>Remera Clásica</h3>
+                        <p class="descripcion">una clasica que convina con todo.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Remeras_M/remera-maria-cher-M.jpg" alt="reme mujer 4">
+                    <div class="info-producto">
+                        <h3>Remera blanca con estampa</h3>
+                        <p class="descripcion">Ideal para un look casual.</p>
+                        <p class="precio">$27.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Remeras_M/remera-other-stories-M.jpg" alt="abrigo mujer 5">
+                    <div class="info-producto">
+                        <h3>Remera negra con rayas blancas</h3>
+                        <p class="descripcion">Rayas que marcan estilo.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Mujer/Remeras_M/remera-trosman-M.jpg" alt="remr mujer 6">
+                    <div class="info-producto">
+                        <h3>Remera negra basica</h3>
+                        <p class="descripcion">Remera negra básica, comoda y versástil.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="seccion-ropa">
+            <h2>HOMBRES</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Remeras_H/remera-H&M-H.jpg" alt="reme hombre 1">
+                    <div class="info-producto">
+                        <h3>Básica negra</h3>
+                        <p class="descripcion">Un clásico que no falla.</p>
+                        <p class="precio">$37.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Remeras_H/remera-bensimon-H.jpg" alt="reme hombre 2">
+                    <div class="info-producto">
+                        <h3>Remera basica</h3>
+                        <p class="descripcion">Comoda y versatil para tus looks.</p>
+                        <p class="precio">$25.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Remeras_H/remera-nautica-H.jpg" alt="abrigo hombre 3">
+                    <div class="info-producto">
+                        <h3>Remera negra cuello en V</h3>
+                        <p class="descripcion">Perfecta para tu día a día.</p>
+                        <p class="precio">$35.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Remeras_H/remera-willson-H.jpg" alt="reme hombre 4">
+                    <div class="info-producto">
+                        <h3>Remera deportiva gris</h3>
+                        <p class="descripcion">La remera deportiva que necesitas.</p>
+                        <p class="precio">$40.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Remeras_H/remera-zara-H.jpg" alt="reme hombre 5">
+                    <div class="info-producto">
+                        <h3>Remera gris</h3>
+                        <p class="descripcion">Ideal para tu look urbano.</p>
+                        <p class="precio">$30.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="../imagenes-indumentaria/Hombre/Remeras_H/chomba-ralph-lauren-H.jpg" alt="abrigo hombre 6">
+                    <div class="info-producto">
+                        <h3>Chomba rayada</h3>
+                        <p class="descripcion">Ideal para un toque formal.</p>
+                        <p class="precio">$40.000</p>
+                        <button class="boton-carrito" onclick="addToCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; 2025 Begonia. Todos los derechos reservados.</p>
+    </div>
+   
+    <script src="remeras-JVS.js"> </script>
+</body>
+</html>
